@@ -1,0 +1,792 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AccessUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local sMain = Instance.new("Frame")
+local SideBar = Instance.new("Frame")
+local Login = Instance.new("TextLabel")
+local Outline1 = Instance.new("TextLabel")
+local Outline1_2 = Instance.new("TextLabel")
+local LOGIN_Text = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextBox_2 = Instance.new("TextBox")
+local Outline1_3 = Instance.new("TextLabel")
+local Gradient = Instance.new("UIGradient")
+local Outline1_4 = Instance.new("TextLabel")
+local Submit = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Outline1_5 = Instance.new("TextLabel")
+local Outline1_6 = Instance.new("TextLabel")
+local lc_text = Instance.new("TextLabel")
+local gfc_txt = Instance.new("TextLabel")
+local gfxh_txt = Instance.new("TextLabel")
+local sbOverlay = Instance.new("TextLabel")
+local Button_A1 = Instance.new("ImageButton")
+local GD1 = Instance.new("ImageButton")
+local Wolfy1 = Instance.new("ImageButton")
+local Krystal1 = Instance.new("ImageButton")
+local rcLogo = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local Hide = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local Paren = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Logo_2 = Instance.new("ImageLabel")
+local Minimize_2 = Instance.new("TextButton")
+local Hide_2 = Instance.new("TextButton")
+local Close_2 = Instance.new("TextButton")
+local TextBox_3 = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local execute = Instance.new("TextButton")
+local clear = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local SideBar_2 = Instance.new("Frame")
+local rcLogo_2 = Instance.new("ImageLabel")
+local Wolfy2 = Instance.new("ImageButton")
+local Krystal2 = Instance.new("ImageButton")
+local GD2 = Instance.new("ImageButton")
+local Button_A2 = Instance.new("ImageButton")
+local Message1 = Instance.new("TextLabel")
+local Message2 = Instance.new("TextLabel")
+local Message3 = Instance.new("TextLabel")
+
+--Properties:
+
+AccessUI.Name = "AccessUI"
+AccessUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AccessUI.DisplayOrder = 999999999
+AccessUI.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = AccessUI
+Main.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Main.BorderColor3 = Color3.fromRGB(75, 38, 149)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(0.5, -141, 0.5, -159)
+Main.Size = UDim2.new(0, 282, 0, 318)
+
+sMain.Name = "sMain"
+sMain.Parent = Main
+sMain.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+sMain.BorderSizePixel = 0
+sMain.Position = UDim2.new(-0.00354609918, 0, 0.0762437508, 0)
+sMain.Size = UDim2.new(0, 282, 0, 293)
+
+SideBar.Name = "SideBar"
+SideBar.Parent = sMain
+SideBar.BackgroundColor3 = Color3.fromRGB(213, 213, 106)
+SideBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SideBar.Position = UDim2.new(0.883364975, 0, 0, 0)
+SideBar.Size = UDim2.new(0, 32, 0, 292)
+
+Login.Name = "Login"
+Login.Parent = sMain
+Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Login.BackgroundTransparency = 1.000
+Login.Position = UDim2.new(0.00354609918, 0, -0.000150255859, 0)
+Login.Size = UDim2.new(0, 247, 0, 292)
+Login.ZIndex = 2
+Login.Font = Enum.Font.SourceSans
+Login.Text = ""
+Login.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login.TextSize = 14.000
+
+Outline1.Name = "Outline1"
+Outline1.Parent = Login
+Outline1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline1.BackgroundTransparency = 0.900
+Outline1.BorderSizePixel = 0
+Outline1.Position = UDim2.new(0.238000005, 0, 0.430000007, 0)
+Outline1.Size = UDim2.new(0, 149, 0.00499999989, 0)
+Outline1.ZIndex = 2
+Outline1.Font = Enum.Font.SourceSans
+Outline1.Text = ""
+Outline1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Outline1.TextSize = 14.000
+
+Outline1_2.Name = "Outline1"
+Outline1_2.Parent = Login
+Outline1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline1_2.BackgroundTransparency = 0.900
+Outline1_2.BorderSizePixel = 0
+Outline1_2.Position = UDim2.new(0.237559825, 0, 0.539765477, 0)
+Outline1_2.Size = UDim2.new(0, 149, 0.00475512398, 0)
+Outline1_2.ZIndex = 2
+Outline1_2.Font = Enum.Font.SourceSans
+Outline1_2.Text = ""
+Outline1_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Outline1_2.TextSize = 14.000
+
+LOGIN_Text.Name = "LOGIN_Text"
+LOGIN_Text.Parent = Login
+LOGIN_Text.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+LOGIN_Text.BackgroundTransparency = 1.000
+LOGIN_Text.BorderColor3 = Color3.fromRGB(255, 255, 127)
+LOGIN_Text.Position = UDim2.new(0.22267206, 0, 0.0924657509, 0)
+LOGIN_Text.Size = UDim2.new(0, 152, 0, 50)
+LOGIN_Text.ZIndex = 2
+LOGIN_Text.Font = Enum.Font.Code
+LOGIN_Text.Text = "<b>LOGIN</b>"
+LOGIN_Text.TextColor3 = Color3.fromRGB(255, 255, 127)
+LOGIN_Text.TextScaled = true
+LOGIN_Text.TextSize = 14.000
+LOGIN_Text.TextStrokeTransparency = 0.000
+LOGIN_Text.TextWrapped = true
+
+TextBox.Parent = LOGIN_Text
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Position = UDim2.new(0.0986842141, 0, 1.24000001, 0)
+TextBox.Size = UDim2.new(0, 128, 0, 27)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.Text = "NAME"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 20.000
+
+TextBox_2.Parent = LOGIN_Text
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.Position = UDim2.new(0.0986842141, 0, 2, 0)
+TextBox_2.Size = UDim2.new(0, 128, 0, 27)
+TextBox_2.Font = Enum.Font.SourceSansBold
+TextBox_2.Text = "PASSWORD"
+TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.TextSize = 20.000
+
+Outline1_3.Name = "Outline1"
+Outline1_3.Parent = Login
+Outline1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline1_3.BackgroundTransparency = 0.900
+Outline1_3.BorderSizePixel = 0
+Outline1_3.Position = UDim2.new(0.704999983, 0, 0.569999993, 0)
+Outline1_3.Size = UDim2.new(-0.600968599, 149, 0.059914615, 0)
+Outline1_3.ZIndex = 2
+Outline1_3.Font = Enum.Font.SourceSans
+Outline1_3.Text = ""
+Outline1_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Outline1_3.TextSize = 14.000
+
+Gradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 46, 93)), ColorSequenceKeypoint.new(0.01, Color3.fromRGB(58, 73, 113)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(238, 238, 238))}
+Gradient.Offset = Vector2.new(0, 0.00499999989)
+Gradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.26, 0.67), NumberSequenceKeypoint.new(1.00, 0.00)}
+Gradient.Name = "Gradient"
+Gradient.Parent = Outline1_3
+
+Outline1_4.Name = "Outline1"
+Outline1_4.Parent = Login
+Outline1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline1_4.BackgroundTransparency = 0.900
+Outline1_4.BorderSizePixel = 0
+Outline1_4.Position = UDim2.new(0.382035226, 0, 0.628407776, 0)
+Outline1_4.Size = UDim2.new(-0.280000001, 149, 0.00499999989, 0)
+Outline1_4.ZIndex = 2
+Outline1_4.Font = Enum.Font.SourceSans
+Outline1_4.Text = ""
+Outline1_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Outline1_4.TextSize = 14.000
+
+Submit.Name = "Submit"
+Submit.Parent = Login
+Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+Submit.BackgroundTransparency = 1.000
+Submit.Position = UDim2.new(0.380566686, 0, 0.568493187, 0)
+Submit.Size = UDim2.new(0, 80, 0, 18)
+Submit.ZIndex = 2
+Submit.Font = Enum.Font.SourceSansBold
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Submit.TextSize = 17.000
+Submit.TextStrokeTransparency = 0.900
+Submit.TextTransparency = 0.500
+Submit.TextWrapped = true
+
+TextLabel.Parent = Submit
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+TextLabel.TextTransparency = 0.500
+
+Outline1_5.Name = "Outline1"
+Outline1_5.Parent = Login
+Outline1_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline1_5.BackgroundTransparency = 0.900
+Outline1_5.BorderSizePixel = 0
+Outline1_5.Position = UDim2.new(0.377000004, 0, 0.569999993, 0)
+Outline1_5.Size = UDim2.new(-0.600000024, 149, 0.0599999987, 0)
+Outline1_5.ZIndex = 2
+Outline1_5.Font = Enum.Font.SourceSans
+Outline1_5.Text = ""
+Outline1_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Outline1_5.TextSize = 14.000
+
+Outline1_6.Name = "Outline1"
+Outline1_6.Parent = Login
+Outline1_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline1_6.BackgroundTransparency = 0.900
+Outline1_6.BorderSizePixel = 0
+Outline1_6.Position = UDim2.new(0.382035226, 0, 0.568493187, 0)
+Outline1_6.Size = UDim2.new(-0.280000001, 149, 0.00150685676, 0)
+Outline1_6.ZIndex = 2
+Outline1_6.Font = Enum.Font.SourceSans
+Outline1_6.Text = ""
+Outline1_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Outline1_6.TextSize = 14.000
+
+lc_text.Name = "lc_text"
+lc_text.Parent = Login
+lc_text.BackgroundColor3 = Color3.fromRGB(88, 88, 0)
+lc_text.BackgroundTransparency = 1.000
+lc_text.Position = UDim2.new(0.214574903, 0, 0.784246504, 0)
+lc_text.Size = UDim2.new(0, 159, 0, 20)
+lc_text.ZIndex = 2
+lc_text.Font = Enum.Font.Code
+lc_text.Text = "Lead coder: slashcoders"
+lc_text.TextColor3 = Color3.fromRGB(88, 88, 0)
+lc_text.TextSize = 14.000
+lc_text.TextStrokeColor3 = Color3.fromRGB(88, 88, 0)
+lc_text.TextStrokeTransparency = 0.800
+
+gfc_txt.Name = "gfc_txt"
+gfc_txt.Parent = Login
+gfc_txt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gfc_txt.BackgroundTransparency = 1.000
+gfc_txt.Position = UDim2.new(0.230769232, 0, 0.852739692, 0)
+gfc_txt.Size = UDim2.new(0, 150, 0, 20)
+gfc_txt.ZIndex = 2
+gfc_txt.Font = Enum.Font.Code
+gfc_txt.Text = "UI Maker: JO1TAR0"
+gfc_txt.TextColor3 = Color3.fromRGB(88, 88, 0)
+gfc_txt.TextSize = 14.000
+gfc_txt.TextStrokeColor3 = Color3.fromRGB(88, 88, 0)
+gfc_txt.TextStrokeTransparency = 0.700
+
+gfxh_txt.Name = "gfxh_txt"
+gfxh_txt.Parent = Login
+gfxh_txt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gfxh_txt.BackgroundTransparency = 1.000
+gfxh_txt.Position = UDim2.new(0.230951414, 0, 0.923698664, 0)
+gfxh_txt.Size = UDim2.new(0, 150, 0, 16)
+gfxh_txt.ZIndex = 2
+gfxh_txt.Font = Enum.Font.Code
+gfxh_txt.Text = "Owner Of Idea: JO1TAR0"
+gfxh_txt.TextColor3 = Color3.fromRGB(88, 88, 0)
+gfxh_txt.TextSize = 14.000
+gfxh_txt.TextStrokeColor3 = Color3.fromRGB(88, 88, 0)
+gfxh_txt.TextStrokeTransparency = 0.700
+
+sbOverlay.Name = "sbOverlay"
+sbOverlay.Parent = Login
+sbOverlay.Active = true
+sbOverlay.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+sbOverlay.BackgroundTransparency = 0.800
+sbOverlay.Position = UDim2.new(0.380566686, 0, 0.568493187, 0)
+sbOverlay.Selectable = true
+sbOverlay.Size = UDim2.new(0, 80, 0, 18)
+sbOverlay.Visible = false
+sbOverlay.ZIndex = 2
+sbOverlay.Font = Enum.Font.SourceSansBold
+sbOverlay.Text = ""
+sbOverlay.TextColor3 = Color3.fromRGB(255, 255, 255)
+sbOverlay.TextSize = 17.000
+sbOverlay.TextStrokeTransparency = 0.900
+sbOverlay.TextTransparency = 0.500
+sbOverlay.TextWrapped = true
+
+Button_A1.Name = "Button_A1"
+Button_A1.Parent = sMain
+Button_A1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_A1.BorderColor3 = Color3.fromRGB(52, 82, 103)
+Button_A1.Position = UDim2.new(0.893999994, 0, 0.575999975, 0)
+Button_A1.Size = UDim2.new(0, 26, 0, 26)
+Button_A1.Image = "http://www.roblox.com/asset/?id=15023260612"
+
+GD1.Name = "GD1"
+GD1.Parent = sMain
+GD1.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+GD1.BorderColor3 = Color3.fromRGB(52, 82, 103)
+GD1.Position = UDim2.new(0.893999994, 0, 0.683000028, 0)
+GD1.Size = UDim2.new(0, 26, 0, 26)
+GD1.Image = "http://www.roblox.com/asset/?id=15023328379"
+
+Wolfy1.Name = "Wolfy1"
+Wolfy1.Parent = sMain
+Wolfy1.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Wolfy1.BorderColor3 = Color3.fromRGB(255, 255, 0)
+Wolfy1.Position = UDim2.new(0.893999994, 0, 0.894999981, 0)
+Wolfy1.Size = UDim2.new(0, 26, 0, 26)
+Wolfy1.Image = "http://www.roblox.com/asset/?id=15023284368"
+
+Krystal1.Name = "Krystal1"
+Krystal1.Parent = sMain
+Krystal1.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Krystal1.BorderColor3 = Color3.fromRGB(255, 255, 0)
+Krystal1.Position = UDim2.new(0.893999994, 0, 0.786348164, 0)
+Krystal1.Size = UDim2.new(0, 26, 0, 26)
+Krystal1.Image = "http://www.roblox.com/asset/?id=15023593968"
+
+rcLogo.Name = "rcLogo"
+rcLogo.Parent = sMain
+rcLogo.Active = true
+rcLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rcLogo.BackgroundTransparency = 1.000
+rcLogo.BorderColor3 = Color3.fromRGB(52, 82, 103)
+rcLogo.Position = UDim2.new(0.489744574, 0, -0.140761554, 0)
+rcLogo.Selectable = true
+rcLogo.Size = UDim2.new(0, 217, 0, 250)
+rcLogo.Image = "http://www.roblox.com/asset/?id=15023198080"
+rcLogo.ImageTransparency = 0.500
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(-0.000571825833, 0, -0.00237259734, 0)
+Title.Size = UDim2.new(0, 282, 0, 25)
+Title.Font = Enum.Font.SourceSans
+Title.Text = ""
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 14.000
+
+Logo.Name = "Logo"
+Logo.Parent = Main
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(-0.0531914905, 0, -0.0503070764, 0)
+Logo.Size = UDim2.new(0, 69, 0, 68)
+Logo.Image = "http://www.roblox.com/asset/?id=15023170321"
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 43, 43)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.883000016, 0, -0.00499998871, 0)
+Close.Size = UDim2.new(0, 34, 0, 25)
+Close.Font = Enum.Font.Code
+Close.Text = "x"
+Close.TextColor3 = Color3.fromRGB(180, 180, 180)
+Close.TextSize = 20.000
+
+Hide.Name = "Hide"
+Hide.Parent = Main
+Hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide.BackgroundTransparency = 1.000
+Hide.BorderSizePixel = 0
+Hide.Position = UDim2.new(0.649785876, 0, -0.00313716871, 0)
+Hide.Size = UDim2.new(0, 32, 0, 24)
+Hide.Font = Enum.Font.Antique
+Hide.Text = "_"
+Hide.TextColor3 = Color3.fromRGB(180, 180, 180)
+Hide.TextSize = 14.000
+Hide.TextWrapped = true
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Main
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.766575396, 0, -0.00313716871, 0)
+Minimize.Size = UDim2.new(0, 32, 0, 24)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = "□"
+Minimize.TextColor3 = Color3.fromRGB(106, 106, 106)
+Minimize.TextSize = 20.000
+
+Paren.Name = "Paren"
+Paren.Parent = AccessUI
+Paren.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Paren.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Paren.BorderSizePixel = 0
+Paren.Position = UDim2.new(0.133602709, 0, 0.302895993, 0)
+Paren.Size = UDim2.new(0, 277, 0, 293)
+Paren.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = Paren
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0, 0, -0.0876968428, 0)
+Title_2.Size = UDim2.new(0, 307, 0, 25)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = ""
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextSize = 14.000
+
+Logo_2.Name = "Logo"
+Logo_2.Parent = Title_2
+Logo_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo_2.BackgroundTransparency = 1.000
+Logo_2.Position = UDim2.new(-0.049568288, 0, -0.650307, 0)
+Logo_2.Size = UDim2.new(0, 69, 0, 68)
+Logo_2.Image = "http://www.roblox.com/asset/?id=15023170321"
+
+Minimize_2.Name = "Minimize"
+Minimize_2.Parent = Paren
+Minimize_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_2.BackgroundTransparency = 1.000
+Minimize_2.BorderSizePixel = 0
+Minimize_2.Position = UDim2.new(0.885708928, 0, -0.0850484297, 0)
+Minimize_2.Size = UDim2.new(0, 32, 0, 24)
+Minimize_2.Font = Enum.Font.SourceSans
+Minimize_2.Text = "□"
+Minimize_2.TextColor3 = Color3.fromRGB(106, 106, 106)
+Minimize_2.TextSize = 20.000
+
+Hide_2.Name = "Hide"
+Hide_2.Parent = Paren
+Hide_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide_2.BackgroundTransparency = 1.000
+Hide_2.BorderSizePixel = 0
+Hide_2.Position = UDim2.new(0.794190347, 0, -0.0816354603, 0)
+Hide_2.Size = UDim2.new(0, 32, 0, 24)
+Hide_2.Font = Enum.Font.Antique
+Hide_2.Text = "_"
+Hide_2.TextColor3 = Color3.fromRGB(180, 180, 180)
+Hide_2.TextSize = 14.000
+Hide_2.TextWrapped = true
+
+Close_2.Name = "Close"
+Close_2.Parent = Paren
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 43, 43)
+Close_2.BackgroundTransparency = 1.000
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.991303265, 0, -0.090324223, 0)
+Close_2.Size = UDim2.new(0, 34, 0, 25)
+Close_2.Font = Enum.Font.Code
+Close_2.Text = "x"
+Close_2.TextColor3 = Color3.fromRGB(180, 180, 180)
+Close_2.TextSize = 20.000
+
+TextBox_3.Parent = Paren
+TextBox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.Size = UDim2.new(0, 277, 0, 193)
+TextBox_3.Font = Enum.Font.SourceSansBold
+TextBox_3.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.PlaceholderText = "FE SCRIPT HERE"
+TextBox_3.Text = ""
+TextBox_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.TextSize = 15.000
+TextBox_3.TextWrapped = true
+
+TextButton.Parent = Paren
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextButton.BorderColor3 = Color3.fromRGB(218, 218, 109)
+TextButton.Position = UDim2.new(0, 0, 0.658703089, 0)
+TextButton.Size = UDim2.new(0, 88, 0, 25)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Open"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+execute.Name = "execute"
+execute.Parent = Paren
+execute.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+execute.BorderColor3 = Color3.fromRGB(218, 218, 109)
+execute.Position = UDim2.new(0.317689538, 0, 0.658703089, 0)
+execute.Size = UDim2.new(0, 94, 0, 25)
+execute.Font = Enum.Font.SourceSansBold
+execute.Text = "Execute"
+execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+execute.TextSize = 14.000
+
+clear.Name = "clear"
+clear.Parent = Paren
+clear.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+clear.BorderColor3 = Color3.fromRGB(218, 218, 109)
+clear.Position = UDim2.new(0.657039702, 0, 0.658703089, 0)
+clear.Size = UDim2.new(0, 94, 0, 25)
+clear.Font = Enum.Font.SourceSansBold
+clear.Text = "Clear"
+clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+clear.TextSize = 14.000
+
+Frame.Parent = Paren
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.744027317, 0)
+Frame.Size = UDim2.new(0, 274, 0, 75)
+
+SideBar_2.Name = "SideBar"
+SideBar_2.Parent = Paren
+SideBar_2.BackgroundColor3 = Color3.fromRGB(213, 213, 106)
+SideBar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SideBar_2.Position = UDim2.new(0.991668165, 0, -0.00341296918, 0)
+SideBar_2.Size = UDim2.new(0, 32, 0, 292)
+
+rcLogo_2.Name = "rcLogo"
+rcLogo_2.Parent = SideBar_2
+rcLogo_2.Active = true
+rcLogo_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rcLogo_2.BackgroundTransparency = 1.000
+rcLogo_2.BorderColor3 = Color3.fromRGB(52, 82, 103)
+rcLogo_2.Position = UDim2.new(-3.49961662, 0, -0.144186154, 0)
+rcLogo_2.Selectable = true
+rcLogo_2.Size = UDim2.new(0, 217, 0, 250)
+rcLogo_2.Image = "http://www.roblox.com/asset/?id=15023198080"
+rcLogo_2.ImageTransparency = 0.500
+
+Wolfy2.Name = "Wolfy2"
+Wolfy2.Parent = SideBar_2
+Wolfy2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Wolfy2.BorderColor3 = Color3.fromRGB(255, 255, 0)
+Wolfy2.Position = UDim2.new(0.0814990997, 0, 0.888150692, 0)
+Wolfy2.Size = UDim2.new(0, 26, 0, 26)
+Wolfy2.Image = "http://www.roblox.com/asset/?id=15023284368"
+
+Krystal2.Name = "Krystal2"
+Krystal2.Parent = SideBar_2
+Krystal2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Krystal2.BorderColor3 = Color3.fromRGB(255, 255, 0)
+Krystal2.Position = UDim2.new(0.0814990997, 0, 0.779498816, 0)
+Krystal2.Size = UDim2.new(0, 26, 0, 26)
+Krystal2.Image = "http://www.roblox.com/asset/?id=15023593968"
+
+GD2.Name = "GD2"
+GD2.Parent = SideBar_2
+GD2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+GD2.BorderColor3 = Color3.fromRGB(52, 82, 103)
+GD2.Position = UDim2.new(0.0814990997, 0, 0.67615068, 0)
+GD2.Size = UDim2.new(0, 26, 0, 26)
+GD2.Image = "http://www.roblox.com/asset/?id=15023328379"
+
+Button_A2.Name = "Button_A2"
+Button_A2.Parent = SideBar_2
+Button_A2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_A2.BorderColor3 = Color3.fromRGB(52, 82, 103)
+Button_A2.Position = UDim2.new(0.0814990997, 0, 0.569150627, 0)
+Button_A2.Size = UDim2.new(0, 26, 0, 26)
+Button_A2.Image = "http://www.roblox.com/asset/?id=15023260612"
+
+Message1.Name = "Message1"
+Message1.Parent = Paren
+Message1.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Message1.BackgroundTransparency = 1.000
+Message1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message1.BorderSizePixel = 0
+Message1.Position = UDim2.new(-0.23104693, 0, 0.757679164, 0)
+Message1.Size = UDim2.new(0, 200, 0, 50)
+Message1.Visible = false
+Message1.Font = Enum.Font.Unknown
+Message1.Text = "EXECUTED✅"
+Message1.TextColor3 = Color3.fromRGB(75, 75, 37)
+Message1.TextSize = 14.000
+Message1.TextStrokeColor3 = Color3.fromRGB(75, 75, 37)
+
+Message2.Name = "Message2"
+Message2.Parent = Paren
+Message2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Message2.BackgroundTransparency = 1.000
+Message2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message2.BorderSizePixel = 0
+Message2.Position = UDim2.new(-0.231000006, 0, 0.758000016, 0)
+Message2.Size = UDim2.new(0, 200, 0, 50)
+Message2.Visible = false
+Message2.Font = Enum.Font.Unknown
+Message2.Text = "CLEARED✅"
+Message2.TextColor3 = Color3.fromRGB(75, 75, 37)
+Message2.TextSize = 14.000
+Message2.TextStrokeColor3 = Color3.fromRGB(75, 75, 37)
+
+Message3.Name = "Message3"
+Message3.Parent = Paren
+Message3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Message3.BackgroundTransparency = 1.000
+Message3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message3.BorderSizePixel = 0
+Message3.Position = UDim2.new(0.122790612, 0, 0.717044353, 0)
+Message3.Size = UDim2.new(0, 200, 0, 50)
+Message3.Visible = false
+Message3.Font = Enum.Font.Unknown
+Message3.Text = "SORRY BUT THIS OPTION ISNT ADDED YET(RC7 ERROR)"
+Message3.TextColor3 = Color3.fromRGB(255, 0, 0)
+Message3.TextSize = 14.000
+Message3.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+
+-- Scripts:
+
+local function BCPDOY_fake_script() -- Submit.LocalScript 
+	local script = Instance.new('LocalScript', Submit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Paren.Visible = true
+	end)
+end
+coroutine.wrap(BCPDOY_fake_script)()
+local function DJNRWF_fake_script() -- Title.Drag 
+	local script = Instance.new('LocalScript', Title)
+
+	local UserInputService = game:GetService("UserInputService")
+	local CanDrag = false
+	local gui = script.Parent.Parent
+	script.Parent.MouseEnter:Connect(function()
+		CanDrag = true
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		CanDrag = false
+	end)
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if CanDrag == true then
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(DJNRWF_fake_script)()
+local function SLPL_fake_script() -- Close.Click 
+	local script = Instance.new('Script', Close)
+
+	local Gui = script.Parent
+	
+	function onClicked()
+	script.Parent.Parent.Parent:Remove()
+	end
+	
+	Gui.MouseButton1Click:connect(onClicked)
+end
+coroutine.wrap(SLPL_fake_script)()
+local function YZHY_fake_script() -- Close_2.Click 
+	local script = Instance.new('Script', Close_2)
+
+	local Gui = script.Parent
+	
+	function onClicked()
+	script.Parent.Parent.Parent:Remove()
+	end
+	
+	Gui.MouseButton1Click:connect(onClicked)
+end
+coroutine.wrap(YZHY_fake_script)()
+local function XXUX_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Message1.Visible = false
+		script.Parent.Parent.Message2.Visible = false
+		script.Parent.Parent.Message3.Visible = true
+	end)
+end
+coroutine.wrap(XXUX_fake_script)()
+local function GSZKC_fake_script() -- execute.LocalScript 
+	local script = Instance.new('LocalScript', execute)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Message1.Visible = true
+		script.Parent.Parent.Message2.Visible = false
+		script.Parent.Parent.Message3.Visible = false
+	end)
+end
+coroutine.wrap(GSZKC_fake_script)()
+local function HQIHF_fake_script() -- clear.LocalScript 
+	local script = Instance.new('LocalScript', clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(HQIHF_fake_script)()
+local function GGMEABS_fake_script() -- clear.LocalScript 
+	local script = Instance.new('LocalScript', clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Message1.Visible = false
+		script.Parent.Parent.Message2.Visible = true
+		script.Parent.Parent.Message3.Visible = false
+	end)
+end
+coroutine.wrap(GGMEABS_fake_script)()
+local function SNRFPV_fake_script() -- Paren.DraggableGUI 
+	local script = Instance.new('LocalScript', Paren)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(SNRFPV_fake_script)()
+execute.MouseButton1Down:connect(function() 
+	assert(loadstring(TextBox.Text))()
+end)
+Krystal1.MouseButton1Down:connect(function() 
+	loadstring(game:HttpGet('https://pastebin.com/raw/qqgpugGF'))()
+end)
+--https://pastebin.com/raw/qqgpugGF
+Wolfy1.MouseButton1Down:connect(function() 
+	loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+end)
+Wolfy2.MouseButton1Down:connect(function() 
+	loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+end)
+Krystal2.MouseButton1Down:connect(function() 
+	loadstring(game:HttpGet('https://pastebin.com/raw/qqgpugGF'))()
+end)
